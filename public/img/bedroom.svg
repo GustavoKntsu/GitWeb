@@ -1,0 +1,13 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#F8F9FA"/>
+  <rect x="0" y="0" width="400" height="300" fill="#E9ECEF"/>
+  <g transform="translate(50, 80)">
+    <rect x="0" y="100" width="300" height="80" rx="5" fill="#264653"/>
+    <rect x="20" y="70" width="260" height="30" rx="5" fill="#2A9D8F"/>
+    <rect x="120" y="20" width="60" height="50" rx="2" fill="#E9C46A"/>
+    <rect x="40" y="180" width="40" height="30" rx="2" fill="#264653"/>
+    <rect x="220" y="180" width="40" height="30" rx="2" fill="#264653"/>
+  </g>
+  <rect x="0" y="230" width="400" height="70" fill="rgba(0,0,0,0.7)"/>
+  <text x="200" y="270" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Bedroom</text>
+</svg>
