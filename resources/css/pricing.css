@@ -32,6 +32,16 @@ body {
     margin-left: 1310px;
 }
 
+.white_chair-img{
+    width: 39px;
+    height: 360px;
+
+}
+
+.sofa-img{
+    width: 39px;
+    height: auto;
+}
 
 .container {
     max-width: 960px;
