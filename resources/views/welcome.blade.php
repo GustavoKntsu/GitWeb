@@ -42,7 +42,7 @@
         <div class="row align-items-center">
             <!-- Texto -->
             <div class="col-lg-6 mb-4">
-                <h1 class="fw-bold display-4">Descubra Móveis<br>Com Alta Qualidade ✨</h1>
+                <h1 class="fw-bold display-4">Descubra Móveis<br>Com Alta Qualidade</h1>
                 <p class="lead text-muted mt-3">
                     Conforto, qualidade e design atemporal para transformar seu ambiente.
                 </p>
@@ -106,15 +106,30 @@
 
 
 <!-- Produtos -->
-<section class="container py-3">
+<section class="container py-5">
     <h2 class="text-center fw-bold section-title">Best Sellers</h2>
-    <div class="compact-carousel ">
+
+    <div class="position-relative">
+        <!-- Navigation buttons -->
+        <button id="prevBtn" class="carousel-nav-btn prev-btn">‹</button>
+        <button id="nextBtn" class="carousel-nav-btn next-btn">›</button>
+
         <div class="carousel-container" id="carouselContainer">
-            <div class="card border-0 shadow-sm product-card">
-                <img src="{{ asset('img/Cadeira_branca.webp') }}" class="card-img-top" alt="Produto 1">
+            <div class="card border-0 shadow-sm product-card white-chair">
+                <img src="{{ asset('img/white_chair.svg') }}" class="card-img-top" alt="White aesthetic chair">
                 <div class="card-body text-center">
                     <h5 class="card-title">Cadeira Moderna</h5>
                     <p class="text-muted">$ 63,47</p>
+                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-container" id="carouselContainer">
+            <div class="card border-0 shadow-sm product-card">
+                <img src="{{ asset('img/sofa_img.webp') }}" class="card-img-top" alt="Sofa">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sofa</h5>
+                    <p class="text-muted">$ 109,98</p>
                     <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
