@@ -8,7 +8,7 @@
     <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Pricing.css -->
-    <link href="{{ asset('css/pricing.css') }}" rel="stylesheet">
+    <link href="{{ asset('./css/pricing.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -115,6 +115,7 @@
         <button id="nextBtn" class="carousel-nav-btn next-btn">›</button>
 
         <div class="carousel-container" id="carouselContainer">
+
             <div class="card border-0 shadow-sm product-card white-chair">
                 <img src="{{ asset('img/white_chair.svg') }}" class="card-img-top" alt="White aesthetic chair">
                 <div class="card-body text-center">
@@ -123,8 +124,7 @@
                     <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
-        </div>
-        <div class="carousel-container" id="carouselContainer">
+
             <div class="card border-0 shadow-sm product-card">
                 <img src="{{ asset('img/sofa_img.webp') }}" class="card-img-top" alt="Sofa">
                 <div class="card-body text-center">
