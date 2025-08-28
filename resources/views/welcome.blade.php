@@ -117,21 +117,23 @@
         <button id="prevBtn" class="carousel-nav-btn prev-btn">‹</button>
         <button id="nextBtn" class="carousel-nav-btn next-btn">›</button>
 
-        <div class="d-flex overflow-auto gap-4 py-4" style="scroll-snap-type: x mandatory;">
-            <div class="card border-0 product-card white-chair">
-                <img src="{{ asset('img/white_chair.svg') }}" class="card-img-top" alt="White aesthetic chair">
+        <div id="carousel" class="d-flex overflow-hidden gap-4 py-4" style="scroll-snap-type: x mandatory; scroll-behavior: smooth;">
+
+
+        <div class="card border-0 product-card white-chair">
+                <img src="{{ asset('img/Bookshelf.svg') }}" class="card-img-top" alt="White aesthetic chair">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Cadeira Moderna</h5>
-                    <p class="text-muted">$ 63,47</p>
+                    <h5 class="card-title">Bookshelf</h5>
+                    <p class="text-muted">$ 72,19</p>
                     <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
 
             <div class="card border-0 product-card">
-                <img src="{{ asset('img/sofa_img.webp') }}" class="card-img-top" alt="Sofa">
+                <img src="{{ asset('img/white_chair.svg') }}" class="card-img-top" alt="Sofa">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Sofa</h5>
-                    <p class="text-muted">$ 109,98</p>
+                    <h5 class="card-title">White Aesthetic Chair</h5>
+                    <p class="text-muted">$ 63,47</p>
                     <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
@@ -139,7 +141,54 @@
             <div class="card border-0 product-card">
                 <img src="{{ asset('img/lamp.svg') }}" class="card-img-top" alt="Sofa">
                 <div class="card-body text-center">
+                    <h5 class="card-title">Bardono Smart Lamp</h5>
+                    <p class="text-muted">$ 62,23</p>
+                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+
+
+            <div class="card border-0 product-card">
+                <img src="{{ asset('img/sofa_img.webp') }}" class="card-img-top" alt="Sofa">
+                <div class="card-body text-center">
                     <h5 class="card-title">Sofa</h5>
+                    <p class="text-muted">$ 62,23</p>
+                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+
+
+            <div class="card border-0 product-card">
+                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Sofa">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Office Desk</h5>
+                    <p class="text-muted">$ 62,23</p>
+                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card border-0 product-card">
+                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Sofa">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Office Desk</h5>
+                    <p class="text-muted">$ 62,23</p>
+                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card border-0 product-card">
+                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Sofa">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Office Desk</h5>
+                    <p class="text-muted">$ 62,23</p>
+                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card border-0 product-card">
+                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Sofa">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Office Desk</h5>
                     <p class="text-muted">$ 62,23</p>
                     <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
                 </div>
@@ -156,5 +205,19 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+</script>
+
 </body>
 </html>

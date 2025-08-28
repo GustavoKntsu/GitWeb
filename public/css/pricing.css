@@ -25,6 +25,24 @@ body {
     font-weight: 600;
     color: #333;
 }
+.product-card {
+    flex: 0 0 250px; /* largura fixa */
+    margin: 0 10px; /* espaçamento entre cards */
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(25, 24, 24, 0);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    height: 200px; /* altura fixa */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 
 .icons-container {
     display: flex;
@@ -41,14 +59,20 @@ body {
 
 
 .carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 40px auto;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow-x: hidden;  /* esconde a barra */
+    scroll-behavior: smooth;
 }
+
+.carousel-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.carousel-container {
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 
 .carousel {
     display: flex;
@@ -77,7 +101,7 @@ body {
 
 .carousel-caption {
     padding: 15px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0);
     border-radius: 8px;
 }
 
@@ -85,7 +109,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0);
     border: none;
     width: 40px;
     height: 40px;
@@ -123,16 +147,16 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .carousel-indicator.active {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0);
     transform: scale(1.2);
 }
-
+/*
 .carousel-nav-btn {
     position: absolute;
     top: 50%;
@@ -149,13 +173,29 @@ body {
     cursor: pointer;
     font-size: 1.25rem;
 }
-
-.prev-btn { left: -20px; }   /* botão esquerdo */
-.next-btn { right: -20px; }  /* botão direito */
+*/
+.carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(25, 24, 24, 0.51);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.3s ease;
+}
 
 .carousel-nav-btn:hover {
-    background: #f8f9fa;
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%) scale(1.1);
 }
+
+.prev-btn { left: -15px; }   /* botão esquerdo */
+.next-btn { right: -15px; }  /* botão direito */
 
 
 
