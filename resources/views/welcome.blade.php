@@ -107,16 +107,18 @@
 
 <!-- Produtos -->
 <section class="container py-5">
-    <h2 class="text-center fw-bold section-title">Best Sellers</h2>
-
+    <h6 class="text-warning fw-semibold mb-1 text-center">Product</h6>
+    <h2 class="text-center fw-bold">Our Popular Products</h2>
+    <p class="text-muted mx-auto text-center" style="max-width: 600px;">
+        Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient.
+    </p>
     <div class="position-relative">
         <!-- Navigation buttons -->
         <button id="prevBtn" class="carousel-nav-btn prev-btn">‹</button>
         <button id="nextBtn" class="carousel-nav-btn next-btn">›</button>
 
-        <div class="carousel-container" id="carouselContainer">
-
-            <div class="card border-0 shadow-sm product-card white-chair">
+        <div class="d-flex overflow-auto gap-4 py-4" style="scroll-snap-type: x mandatory;">
+            <div class="card border-0 product-card white-chair">
                 <img src="{{ asset('img/white_chair.svg') }}" class="card-img-top" alt="White aesthetic chair">
                 <div class="card-body text-center">
                     <h5 class="card-title">Cadeira Moderna</h5>
@@ -125,11 +127,20 @@
                 </div>
             </div>
 
-            <div class="card border-0 shadow-sm product-card">
+            <div class="card border-0 product-card">
                 <img src="{{ asset('img/sofa_img.webp') }}" class="card-img-top" alt="Sofa">
                 <div class="card-body text-center">
                     <h5 class="card-title">Sofa</h5>
                     <p class="text-muted">$ 109,98</p>
+                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card border-0 product-card">
+                <img src="{{ asset('img/lamp.svg') }}" class="card-img-top" alt="Sofa">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sofa</h5>
+                    <p class="text-muted">$ 62,23</p>
                     <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
