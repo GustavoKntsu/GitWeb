@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Pricing.css -->
     <link href="{{ asset('./css/pricing.css') }}" rel="stylesheet">
+    <!-- Font Eudoxus Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Eudoxus+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -195,6 +197,130 @@
             </div>
         </div>
         <!-- Copiar para mais produtos -->
+    </div>
+</section>
+
+<!-- About Product -->
+<section class="container py-5">
+    <div class="row align-items-center">
+        <!-- Coluna Esquerda -->
+        <div class="col-md-6 d-flex flex-column justify-content-between">
+            <div>
+                <h6 class="text-warning fw-semibold ">Our Product</h6>
+                <h2 class="fw-bold" style="max-width: 450px; line-height: 1.3;">
+                    Crafted by talented and high quality material
+                </h2>
+                <p class="text-muted " style="max-width: 600px; line-height: 1.9;">
+                    Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient.
+                </p>
+                <a href="#" class="btn btn-success mb-4">Learn More</a>
+            </div>
+
+            <!-- Imagem da coluna esquerda -->
+            <div>
+                <img src="{{ asset('img/shaping_wood.svg') }}" class="img-fluid rounded shadow-sm" alt="madeira">
+            </div>
+        </div>
+
+        <!-- Coluna Direita -->
+        <div class="col-md-6 d-flex flex-column justify-content-between">
+            <!-- Estatísticas -->
+            <div class="d-flex justify-content-around">
+                <div>
+                    <h3 class="fw-bold">20+</h3>
+                    <p class="text-muted">Years Experience</p>
+                </div>
+                <div>
+                    <h3 class="fw-bold">483</h3>
+                    <p class="text-muted">Happy Client</p>
+                </div>
+                <div>
+                    <h3 class="fw-bold">150+</h3>
+                    <p class="text-muted">Project Finished</p>
+                </div>
+            </div>
+            <!--Imagem Coluna Direita-->
+            <div class="mb-4">
+                <img src="{{ asset('img/livingroom.svg') }}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="container py-5">
+    <h6 class="text-warning fw-semibold mb-1 text-center">Testimonials</h6>
+    <h2 class="text-center fw-bold">What Our Clients Say</h2>
+    <p class="text-muted mx-auto text-center" style="max-width: 600px;">
+        Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient.
+    </p>
+
+    <div class="row mt-5 g-4">
+        <!-- Card1 -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+                <!-- Aspas Imagem -->
+                <img src="{{ asset('img/aspas.svg') }}" alt="Aspas" width="30" class="mb-3">
+
+                <p class="text-muted">
+                    Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient.
+                </p>
+                <div class="d-flex align-items-center justify-content-between mt-4">
+                    <div class="d-flex align-items-center">
+                        <img src="{{ asset('img/Woman1.svg') }}" class="rounded-circle me-2" width="40" height="40" alt="User">
+                        <h6 class="mb-0 fw-bold">Janne Cooper</h6>
+                    </div>
+                    <div class="text-warning fw-bold d-flex align-items-center">
+                        <img src="{{ asset('img/Rating_Star.svg') }}" width="20" height="20" alt="star" class="me-1">
+                        4.3
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2-->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+                <!-- Aspas Imagem -->
+                <img src="{{ asset('img/aspas.svg') }}" alt="Aspas" width="30" class="mb-3">
+
+                <p class="text-muted">
+                    Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient.
+                </p>
+                <div class="d-flex align-items-center justify-content-between mt-4">
+                    <div class="d-flex align-items-center">
+                        <img src="{{ asset('img/men1.svg') }}" class="rounded-circle me-2" width="40" height="40" alt="User">
+                        <h6 class="mb-0 fw-bold">Cobocannaeru</h6>
+                    </div>
+                    <div class="text-warning fw-bold d-flex align-items-center">
+                        <img src="{{ asset('img/Rating_Star.svg') }}" width="20" height="20" alt="star" class="me-1">
+                        4.1
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3-->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4">
+                <!-- Aspas Imagem -->
+                <img src="{{ asset('img/aspas.svg') }}" alt="Aspas" width="30" class="mb-3">
+
+                <p class="text-muted">
+                    Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient.
+                </p>
+                <div class="d-flex align-items-center justify-content-between mt-4">
+                    <div class="d-flex align-items-center">
+                        <img src="{{ asset('img/Men2.svg') }}" class="rounded-circle me-2" width="40" height="40" alt="User">
+                        <h6 class="mb-0 fw-bold">Berry Gunawan</h6>
+                    </div>
+                    <div class="text-warning fw-bold d-flex align-items-center">
+                        <img src="{{ asset('img/Rating_Star.svg') }}" width="20" height="20" alt="star" class="me-1">
+                        3.5
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
