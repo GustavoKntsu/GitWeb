@@ -10,7 +10,9 @@
     <!-- Pricing.css -->
     <link href="{{ asset('./css/pricing.css') }}" rel="stylesheet">
     <!-- Font Eudoxus Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Eudoxus+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://stijndv.com">
+    <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css">
+
 </head>
 <body>
 
@@ -324,9 +326,152 @@
     </div>
 </section>
 
+<!-- Articles -->
+<section class="container py-5">
+    <div class="row align-items-center">
+        <!-- Coluna Esquerda -->
+        <div class="col-md-6 d-flex flex-column justify-content-between">
+            <div>
+                <h6 class="text-warning fw-semibold ">Articles</h6>
+                <h2 class="fw-bold" style="max-width: 450px; line-height: 1.3;">
+                    Our Latest Articles
+                </h2>
+                <p class="text-muted " style="max-width: 600px; line-height: 1.9;">
+                    Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient.
+                </p>
+                <div class="position-relative">
+                    <!-- Imagem -->
+                    <img src="{{ asset('img/flower_Desk.svg') }}" class="img-fluid rounded shadow-sm" alt="Flower Desk">
+
+                    <!-- Texto Interno -->
+                    <div class="position-absolute bottom-0 start-0 p-4 text-white">
+                        <small class="d-block text-white-50">Tips and Tricks</small>
+                        <h5 class="fw-bold">Create Cozy Dinning Room Vibes</h5>
+                        <p class="text-muted text-white-50">Decorating with neutrals brings balance to dinning room...</p>
+                        <a href="#" class="text-white fw-semibold text-decoration-underline">Read More</a>
+                    </div>
+
+                    <!-- Botões de navegação -->
+                    <div class="position-absolute bottom-0 end-0 m-3 d-flex gap-2">
+                        <button type="button" class="btn btn-success">
+                            < </button>
+                        <button type="button" class="btn btn-success">
+                            > </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Coluna Direita-->
+        <div class="col-lg-6">
+            <!-- Item1 -->
+            <div class="d-flex mb-4">
+                <img src="{{ asset('img/Table_for2.webp') }}" alt="Table" class="article-img me3">
+                <div class="ms-3">
+                    <small class="text-muted d-block">Tips and Tricks</small>
+                    <h6 class="fw-bold mb-1">6 ways to give your home minimalistic vibes</h6>
+                    <p class="text-muted small mb-2">Pellentesque etiam blandit in...</p>
+                    <div class="d-flex align-items-center small text-muted">
+                        <img src="{{ asset('img/woman2.svg') }}" alt="User" class="user-img">
+                        <span class="fw-bold"> By Jerremy Jean</span>
+                        <span class="text-muted ms-2">- Friday, 1 April 2022</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2-->
+            <div class="d-flex mb-4">
+                <img src="{{ asset('img/bedroom_mirror.svg') }}" alt="Table" class="article-img me3">
+                <div class="ms-3">
+                    <small class="text-muted d-block">Design Inspiration</small>
+                    <h6 class="fw-bold mb-1">How to make your interiors cooler and more stylish</h6>
+                    <p class="text-muted small mb-2">Pellentesque etiam blandit in...</p>
+                    <div class="d-flex align-items-center small text-muted">
+                        <img src="{{ asset('img/woman3.svg') }}" alt="user" class="user-img">
+                        <span class="fw-bold"> By Michaela Augus</span>
+                        <span class="text-muted ms-2">- Friday, 1 April 2022</span>
+                    </div>
+                </div>
+            </div>
+
+            <! Item 3-->
+            <div class="d-flex mb-4">
+                <img src="{{ asset('img/small_closet.svg') }}" alt="closet" class="article-img me3">
+                <div class="ms-3">
+                    <small class="text-muted d-block">Tips and Tricks</small>
+                    <h6 class="fw-bold mb-1">Elements to add character to your space</h6>
+                    <p class="text-muted small mb-2">Pellentesque etiam blandit in...</p>
+                    <div class="d-flex align-items-center small text-muted">
+                        <img src="{{ asset('img/men3.svg') }}" alt="user" class="user-img">
+                        <span class="fw-bold"> By Kim Gurameh</span>
+                        <span class="text-muted ms-2">- Friday, 1 April 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Antes do Rodapé -->
+<section class="container py-5" id="cta" class="cta-section">
+    <div class="Container cta-container">
+        <h2>Join with me to get special discount</h2>
+        <a href="#" class="cta-btn">
+            Learn More <span>&rarr;</span>
+        </a>
+    </div>
+
+
+</section>
+
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-4 mt-5">
-    <p class="mb-0">&copy; {{ date('Y') }} 4Selet. Todos os direitos reservados.</p>
+<footer class="footer bg-white py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Logo + Descrição -->
+            <div class="col-lg-4 col-sm-12 col-logo">
+                <img src="{{ asset('img/logo.svg') }}" alt="Logo" class="logo">
+
+                <p class="footer-desc">
+                    Lalasia is digital agency that help you make better experience iaculis cras in.
+                </p>
+            </div>
+
+            <!-- Links Product -->
+            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
+                <h6 class="footer-title">Product</h6>
+                <ul class="footer-links">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Selling</a></li>
+                    <li><a href="#">Home Decor</a></li>
+                    <li><a href="#">Kitchen Set</a></li>
+                </ul>
+            </div>
+
+            <!-- Links Services -->
+            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
+                <h6 class="footer-title">Services</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FaQ</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us -->
+            <div class="col-sm-4 col-lg-2">
+                <h6 class="footer-title">Follow Us</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
 </footer>
 
 <!-- Bootstrap JS -->
