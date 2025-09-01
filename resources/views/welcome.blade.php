@@ -425,54 +425,52 @@
 </section>
 
 <!-- Footer -->
-<footer class="footer bg-white py-5 mt-5">
-    <div class="container">
-        <div class="row">
-            <!-- Logo + Descrição -->
-            <div class="col-lg-4 col-sm-12 col-logo">
-                <img src="{{ asset('img/logo.svg') }}" alt="Logo" class="logo">
+<footer class="footer bg-white py-5 mt-5"> <!-- NOVO -->
+    <div class="container"> <!-- NOVO -->
+        <div class="row"> <!-- NOVO -->
+            <!-- Logo + Descrição --> <!-- NOVO -->
+            <div class="col-lg-4 col-sm-12 col-logo"><!-- NOVO -->
+                <img src="{{ asset('img/logo.svg') }}" alt="Logo" class="logo"> <!-- NOVO -->
 
-                <p class="footer-desc">
-                    Lalasia is digital agency that help you make better experience iaculis cras in.
-                </p>
-            </div>
+                <p class="footer-desc"> <!-- NOVO -->
+                    Lalasia is digital agency that help you make better experience iaculis cras in. <!-- NOVO -->
+                </p><!-- NOVO -->
+            </div> <!-- NOVO -->
 
-            <!-- Links Product -->
-            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
-                <h6 class="footer-title">Product</h6>
-                <ul class="footer-links">
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Best Selling</a></li>
-                    <li><a href="#">Home Decor</a></li>
-                    <li><a href="#">Kitchen Set</a></li>
-                </ul>
-            </div>
+            <!-- Links Product --> <!-- NOVO -->
+            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0"> <!-- NOVO -->
+                <h6 class="footer-title">Product</h6> <!-- NOVO -->
+                <ul class="footer-links"> <!-- NOVO -->
+                    <li><a href="#">New Arrivals</a></li> <!-- NOVO -->
+                    <li><a href="#">Best Selling</a></li> <!-- NOVO -->
+                    <li><a href="#">Home Decor</a></li> <!-- NOVO -->
+                    <li><a href="#">Kitchen Set</a></li> <!-- NOVO -->
+                </ul> <!-- NOVO -->
+            </div> <!-- NOVO -->
 
-            <!-- Links Services -->
-            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
-                <h6 class="footer-title">Services</h6>
-                <ul class="footer-links">
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">FaQ</a></li>
-                    <li><a href="#">Pricing</a></li>
-                </ul>
-            </div>
+            <!-- Links Services --> <!-- NOVO -->
+            <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0"> <!-- NOVO -->
+                <h6 class="footer-title">Services</h6> <!-- NOVO -->
+                <ul class="footer-links"> <!-- NOVO -->
+                    <li><a href="#">Catalog</a></li> <!-- NOVO -->
+                    <li><a href="#">Blog</a></li> <!-- NOVO -->
+                    <li><a href="#">FaQ</a></li> <!-- NOVO -->
+                    <li><a href="#">Pricing</a></li> <!-- NOVO -->
+                </ul> <!-- NOVO -->
+            </div> <!-- NOVO -->
 
-            <!-- Follow Us -->
-            <div class="col-sm-4 col-lg-2">
-                <h6 class="footer-title">Follow Us</h6>
-                <ul class="footer-links">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-    </div>
-</footer>
+            <!-- Follow Us --> <!-- NOVO -->
+            <div class="col-sm-4 col-lg-2"> <!-- NOVO -->
+                <h6 class="footer-title">Follow Us</h6> <!-- NOVO -->
+                <ul class="footer-links"> <!-- NOVO -->
+                    <li><a href="#">Facebook</a></li> <!-- NOVO -->
+                    <li><a href="#">Instagram</a></li> <!-- NOVO -->
+                    <li><a href="#">Twitter</a></li> <!-- NOVO -->
+                </ul> <!-- NOVO -->
+            </div> <!-- NOVO -->
+        </div> <!-- NOVO -->
+    </div> <!-- NOVO -->
+</footer> <!-- NOVO -->
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

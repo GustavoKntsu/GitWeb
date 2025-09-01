@@ -247,154 +247,161 @@ body {
     max-width: 450px;
     line-height: 1.3;
 }
-
-.text-white-50 {
-    color: rgba(255, 255, 255, 0.5) !important;
+/* novo */
+.text-white-50 { /* novo */
+    color: rgba(255, 255, 255, 0.5) !important; /* novo */
 }
 
-/* Imagem do artigo (esquerda) */
-.article-img {
-    width: 260px;      /* deixa proporcional ao protótipo */
-    height: 260px;     /* mantém quadrado */
-    object-fit: cover; /* corta o excesso */
-    border-radius: 8px; /* cantos arredondados */
+/* Imagem do artigo (esquerda) */ /* novo */
+.article-img { /* novo */
+    width: 260px;      /* deixa proporcional ao protótipo */ /* novo */
+    height: 260px;     /* mantém quadrado */ /* novo */
+    object-fit: cover; /* corta o excesso */ /* novo */
+    border-radius: 8px; /* cantos arredondados */ /* novo */
+}
+/* novo */
+/* Foto do autor (pequena e arredondada) */ /* novo */
+.user-img { /* novo */
+    width: 28px; /* novo */
+    height: 28px; /* novo */
+    border-radius: 50%; /* novo */
+    object-fit: cover; /* novo */
+    margin-right: 5px; /* novo */
 }
 
-/* Foto do autor (pequena e arredondada) */
-.user-img {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 5px;
+/* Seção de CTA */ /* novo */
+.cta-section { /* novo */
+    padding: 60px 0;          /* Espaço vertical */ /* novo */
 }
 
-/* Seção de CTA */
-.cta-section {
-    padding: 60px 0;          /* Espaço vertical */
-}
-
-.cta-container {
+.cta-container { /* novo */
     display: flex;
-    justify-content: space-between; /* Espaço entre título e botão */
-    align-items: center;            /* Alinha verticalmente */
-    gap: 20px;                     /* Espaço entre elementos em telas pequenas */
+    justify-content: space-between; /* Espaço entre título e botão */ /* novo */
+    align-items: center;            /* Alinha verticalmente */  /* novo */
+    gap: 20px;        /* Espaço entre elementos em telas pequenas */  /* novo */
 }
-
+/* novo */
 .cta-container h2 {
-    font-weight: 700;
-    font-size: 28px;
-    margin: 0;
+    font-weight: 700; /* novo */
+    font-size: 28px; /* novo */
+    margin: 0; /* novo */
 }
-
+/* novo */
 .cta-btn {
-    display: inline-flex;     /* Faz botão e seta ficarem alinhados */
-    align-items: center;
-    gap: 8px;                 /* Espaço entre texto e seta */
-    background-color: #518581;/* Azul estilo do protótipo */
-    color: white;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: background 0.3s ease;
+    display: inline-flex;     /* Faz botão e seta ficarem alinhados */ /* novo */
+    align-items: center; /* novo */
+    gap: 8px;                 /* Espaço entre texto e seta */ /* novo */
+    background-color: #518581;/* Azul estilo do protótipo */ /* novo */
+    color: white; /* novo */
+    text-decoration: none; /* novo */
+    padding: 12px 24px; /* novo */
+    border-radius: 6px; /* novo */
+    font-weight: 500; /* novo */
+    transition: background 0.3s ease; /* novo */
 }
-
+/* novo */
 .cta-btn:hover {
-    background-color: #518581; /* Azul mais escuro no hover */
-    color: #fff;
+    background-color: #518581; /* Azul mais escuro no hover */ /* novo */
+    color: #fff;/* novo */
 }
 
-.footer {
-    background-color: #fff;
-    border-top: 1px solid #eaeaea;
-    padding: 40px 0 30px;
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.03);
-    color: #444;
+/*Novo*/
+.footer { /* novo */
+    background-color: #fff;/* novo */
+    border-top: 1px solid #eaeaea; /* novo */
+    padding: 40px 0 30px; /* novo */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.03); /* novo */
+    color: #444; /* novo */
 }
-.discount-banner {
-    background: linear-gradient(135deg, #3a7c74 0%, #2a5c55 100%);
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    margin-bottom: 30px;
-    border-radius: 8px;
+.discount-banner { /* novo */
+    background: linear-gradient(135deg, #3a7c74 0%, #2a5c55 100%); /* novo */
+    color: white; /* novo */
+    padding: 15px 0; /* novo */
+    text-align: center; /* novo */
+    margin-bottom: 30px; /* novo */
+    border-radius: 8px; /* novo */
 }
-.logo {
-    font-weight: 700;
-    font-size: 32px;
-    color: #2a6b5d;
-    margin-bottom: 15px;
+/* novo */
+.logo { /* novo */
+    font-weight: 700; /* novo */
+    font-size: 32px; /* novo */
+    color: #2a6b5d; /* novo */
+    margin-bottom: 15px; /* novo */
 }
-
-.footer .col-logo {
-    margin-right: 60px; /* ajusta o gap lateral */
+/* novo */
+.footer .col-logo { /* novo */
+    margin-right: 60px; /* ajusta o gap lateral */ /* novo */
 }
-
-.footer .logo {
-    display: block;
-    margin-bottom: 15px;
-    width: 140px; /* controla o tamanho do SVG */
+/* novo */
+.footer .logo { /* novo */
+    display: block; /* novo */
+    margin-bottom: 15px; /* novo */
+    width: 140px; /* controla o tamanho do SVG */ /* novo */
 }
-
-.footer-desc {
-    font-size: 16px; /* tamanho ajustado */
-    line-height: 1.8;
-    color: #666;
-    max-width: 3000px;
-    margin: 20px;
+/* novo */
+.footer-desc { /* novo */
+    font-size: 16px; /* tamanho ajustado */ /* novo */
+    line-height: 1.8; /* novo */
+    color: #666; /* novo */
+    max-width: 3000px; /* novo */
+    margin: 20px; /* novo */
 }
-.footer-title {
-    font-weight: 600;
-    font-size: 18px;
-    color: #1c1a1a;
-    margin-bottom: 18px;
-    position: relative;
+/* novo */
+.footer-title { /* novo */
+    font-weight: 600; /* novo */
+    font-size: 18px; /* novo */
+    color: #1c1a1a; /* novo */
+    margin-bottom: 18px; /* novo */
+    position: relative; /* novo */
 }
-.footer-title::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background-color: #1c1a1a;
+/* novo */
+.footer-title::after { /* novo */
+    content: ''; /* novo */
+    position: absolute; /* novo */
+    bottom: -8px; /* novo */
+    left: 0; /* novo */
+    width: 30px; /* novo */
+    height: 2px; /* novo */
+    background-color: #1c1a1a; /* novo */
 }
-
-.footer .row {
-    justify-content: space-between; /* joga as colunas para os cantos */
+/* novo */
+.footer .row { /* novo */
+    justify-content: space-between; /* joga as colunas para os cantos */ /* novo */
 }
-
-.footer-links {
-    list-style: none;
-    padding: 0;
+/* novo */
+.footer-links { /* novo */
+    list-style: none; /* novo */
+    padding: 0; /* novo */
 }
-.footer-links li {
-    margin-bottom: 8px;
+/* novo */
+.footer-links li { /* novo */
+    margin-bottom: 8px; /* novo */
 }
-.footer-links a {
-    color: #555;
-    text-decoration: none;
-    transition: color 0.2s;
+/* novo */
+.footer-links a { /* novo */
+    color: #555; /* novo */
+    text-decoration: none; /* novo */
+    transition: color 0.2s; /* novo */
 }
-.footer-links a:hover {
-    color: #3a7c74;
-}
-
-.divider {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
-    margin: 2rem 0;
-}
-.copyright {
-    color: #666;
-    font-size: 14px;
+/* novo */
+.footer-links a:hover { /* novo */
+    color: #3a7c74; /* novo */
 }
 
-.product-section {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
+.divider { /* novo */
+    height: 1px; /* novo */
+    background: linear-gradient(90deg, transparent, #e0e0e0, transparent); /* novo */
+    margin: 2rem 0; /* novo */
+}
+.copyright { /* novo */
+    color: #666; /* novo */
+    font-size: 14px; /* novo */
+}
+
+.product-section { /* novo */
+    margin-top: 30px; /* novo */
+    padding-top: 20px; /* novo */
+    border-top: 1px solid #eee; /* novo */
 }
 
 
