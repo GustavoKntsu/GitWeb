@@ -110,91 +110,114 @@
 
 
 <!-- Produtos -->
-<section class="container py-5">
+<section class="product-section container py-5">
     <h6 class="text-warning fw-semibold mb-1 text-center">Product</h6>
     <h2 class="text-center fw-bold">Our Popular Products</h2>
     <p class="text-muted mx-auto text-center" style="max-width: 600px;">
         Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient.
     </p>
-    <div class="position-relative">
+    <div class="position-relative mt-5">
         <!-- Navigation buttons -->
         <button id="prevBtn" class="carousel-nav-btn prev-btn">‹</button>
         <button id="nextBtn" class="carousel-nav-btn next-btn">›</button>
 
-        <div id="carousel" class="d-flex overflow-hidden gap-4 py-4" style="scroll-snap-type: x mandatory; scroll-behavior: smooth;">
-
-
-        <div class="card border-0 product-card white-chair">
-                <img src="{{ asset('img/Bookshelf.svg') }}" class="card-img-top" alt="White aesthetic chair">
+        <div id="carousel" class="d-flex overflow-auto gap-4 py-2" style="scroll-snap-type: x mandatory; scroll-behavior: smooth;">
+        <!-- Bookshelf -->
+        <div class="card border-0 shadow-sm product-card">
+                <img src="{{ asset('img/Bookshelf.svg') }}" class="card-img-top" alt="Bookshelf" style="height: 200px; object-fit: contain;">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Bookshelf</h5>
-                    <p class="text-muted">$ 72,19</p>
-                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                    <small class="d-block text-muted">Bookshelf</small>
+                    <h5 class="card-title mb-2">
+                        <a href="{{ url('/comprar') }}" class="text-decoration-none text-dark fw-bold">Bookshelf</a>
+                    </h5>
+                    <p class="text-muted small mb-2">of wood and wood</p>
+                    <p class="fw-bold text-dark mb-0">$72.19</p>
+                </div>
+            </div>
+            <!-- White Chair -->
+            <div class="card border-0 product-card">
+                <img src="{{ asset('img/white_chair.svg') }}" class="card-img-top" alt="white_chair" style="height: 200px; object-fit: contain;">
+                <div class="card-body text-center">
+                    <small class="d-block text-muted">Chair</small>
+                    <h5 class="card-title">
+                        <a href="{{ url('/comprar') }}" class="text-decoration-none text-dark fw-bold">White Chair</a>
+                    </h5>
+                    <p class="text-muted small mb-2">Combination of wood and wool</p>
+                    <p class="fw-bold text-dark mb-0">$ 63,47</p>
                 </div>
             </div>
 
-            <div class="card border-0 product-card">
-                <img src="{{ asset('img/white_chair.svg') }}" class="card-img-top" alt="Sofa">
+            <div class="card border-0 shadow-sm product-card">
+                <img src="{{ asset('img/lamp.svg') }}" class="card-img-top" alt="Lamp">
                 <div class="card-body text-center">
-                    <h5 class="card-title">White Aesthetic Chair</h5>
-                    <p class="text-muted">$ 63,47</p>
-                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-
-            <div class="card border-0 product-card">
-                <img src="{{ asset('img/lamp.svg') }}" class="card-img-top" alt="Sofa">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Bardono Smart Lamp</h5>
-                    <p class="text-muted">$ 62,23</p>
-                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                    <small class="d-block text-muted mb-1">Lamp</small>
+                    <h5 class="card-title mb-2">
+                        <a href="{{ url('/comprar') }}" class="text-decoration-none text-dark fw-bold">Bardono Smart Lamp</a>
+                    </h5>
+                    <p class="text-muted small mb-2">Easy to use with bluetooth connection</p>
+                    <p class="fw-bold text-dark mb-0">$62.23</p>
                 </div>
             </div>
 
 
-            <div class="card border-0 product-card">
+            <div class="card border-0 shadow-sm product-card">
                 <img src="{{ asset('img/sofa_img.webp') }}" class="card-img-top" alt="Sofa">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Sofa</h5>
-                    <p class="text-muted">$ 62,23</p>
-                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                    <small class="d-block text-muted mb-1">Sofa</small>
+                    <h5 class="card-title mb-2">
+                        <a href="{{ url('/comprar') }}" class="text-decoration-none text-dark fw-bold">Sofa Empuk Banget</a>
+                    </h5>
+                    <p class="text-muted small mb-2">Using kapuk randu material</p>
+                    <p class="fw-bold text-dark mb-0">$58.39</p>
                 </div>
             </div>
 
 
-            <div class="card border-0 product-card">
-                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Sofa">
+            <div class="card border-0 shadow-sm product-card">
+                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Desk">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Office Desk</h5>
-                    <p class="text-muted">$ 62,23</p>
-                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                    <small class="d-block text-muted mb-1">Desk</small>
+                    <h5 class="card-title mb-2">
+                        <a href="{{ url('/comprar') }}" class="text-decoration-none text-dark fw-bold">Office Desk</a>
+                    </h5>
+                    <p class="text-muted small mb-2">Modern design for workspace</p>
+                    <p class="fw-bold text-dark mb-0">$89.99</p>
                 </div>
             </div>
 
-            <div class="card border-0 product-card">
-                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Sofa">
+            <div class="card border-0 shadow-sm product-card">
+                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Desk">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Office Desk</h5>
-                    <p class="text-muted">$ 62,23</p>
-                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                    <small class="d-block text-muted mb-1">Desk</small>
+                    <h5 class="card-title mb-2">
+                        <a href="{{ url('/comprar') }}" class="text-decoration-none text-dark fw-bold">Office Desk</a>
+                    </h5>
+                    <p class="text-muted small mb-2">Modern design for workspace</p>
+                    <p class="fw-bold text-dark mb-0">$89.99</p>
                 </div>
             </div>
 
-            <div class="card border-0 product-card">
-                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Sofa">
+            <div class="card border-0 shadow-sm product-card">
+                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Desk">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Office Desk</h5>
-                    <p class="text-muted">$ 62,23</p>
-                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                    <small class="d-block text-muted mb-1">Desk</small>
+                    <h5 class="card-title mb-2">
+                        <a href="{{ url('/comprar') }}" class="text-decoration-none text-dark fw-bold">Office Desk</a>
+                    </h5>
+                    <p class="text-muted small mb-2">Modern design for workspace</p>
+                    <p class="fw-bold text-dark mb-0">$89.99</p>
                 </div>
             </div>
 
-            <div class="card border-0 product-card">
-                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Sofa">
+            <div class="card border-0 shadow-sm product-card">
+                <img src="{{ asset('img/Mesa_de_Escritorio.webp') }}" class="card-img-top" alt="Desk">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Office Desk</h5>
-                    <p class="text-muted">$ 62,23</p>
-                    <a href="{{ url('/comprar') }}" class="btn btn-primary">Comprar</a>
+                    <small class="d-block text-muted mb-1">Desk</small>
+                    <h5 class="card-title mb-2">
+                        <a href="{{ url('/comprar') }}" class="text-decoration-none text-dark fw-bold">Office Desk</a>
+                    </h5>
+                    <p class="text-muted small mb-2">Modern design for workspace</p>
+                    <p class="fw-bold text-dark mb-0">$89.99</p>
                 </div>
             </div>
         </div>
